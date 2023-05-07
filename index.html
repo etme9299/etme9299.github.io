@@ -1,183 +1,526 @@
 <!DOCTYPE html>
-    <html>
-        <head lang="en">
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<html class="no-js" lang="en">
 
-            <!-- jQuery library -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script>
+        function openResume() {
+            window.open("images/Meyer_Ethan_Resume.pdf", "_blank");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#interests">Interests</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <br>
+            <img class = "float-left mr-4" src="images/LCG HEADSHOT.png" alt="Ethan's Profile Pucture" width = "250px" style="border-radius: 50%; width: 25%;">
+            <h1>Ethan Meyer</h1>
+            <h2>Emerging Computer and Data Scientist</h2>
+
+            <button href="#" class="btn-rounded-white" style="color:#3498db; font-weight: bold;" onclick="openResume()">Download Resume</button>
             
-            <!-- Popper JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-            
-            <!-- Latest compiled JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <title>About Me</title>
+        </div>
+        <!-- End #lead-content -->
 
-        </head>
+        <div id="lead-overlay"></div>
 
-        <body> 
-          <!-- Navbar -->
-            <nav class="navbar navbar-expand-sm bg-light navbar-light">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="Connect.html">Connect</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="ePortfolio.html">ePortfolio</a>
-                  </li> -->
-                  
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="heading">About Me</h2>
+                    <!-- <img src="images/project.jpg" style="width: 70%;"> -->
+                    
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        Hello, and welcome to my personal website! I am currently a fourth-year student studying Computer Science and Data Science at the University of Colorado Boulder.
+                         As an emerging data scientist, I seek to gain real-world experience developing <span class="bold-blue">data-driven solutions to complex issues.</span> I aim to leverage a strong work ethic, 
+                         analytical mindset, and technicals skills to provide value in all settings. For more information about myself, please visit my <span class="bold-blue"><a href="https://linkedin.com/in/ewmeyer">LinkedIn</a></span> or for a technical portfolio, 
+                         conscider taking a look at my <span class="bold-blue"><a href="https://github.com/etme9299">GitHub</a></span>. Thank you!
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/etme9299" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/ewmeyer" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:Ethan.Meyer@colorado.edu?subject=" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2022 – August 2022">
+                <h3>Boston Consulting Group</h3>
+                <h4>Summer Associate</h4>
+                <ul>
+                    <li>
+                        Contributed to cross-functional team of consultants designing comprehensive loyalty program for Fortune 500 QSR.
+                    </li>
+                    <li>
+                        Developed and implemented advanced economic models to analyze customer behavior and evaluate financial impact 
+of current loyalty program relative to industry benchmarks.
+                    </li>
+                    <li>
+                        Performed extensive market research and data analysis to identify key drivers of customer loyalty; scaffolded 
+potential solutions to address specific pain points and improve customer retention.
+                    </li>
                 </ul>
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="navbar-brand" href="http://github.com/etme9299/">
-                          <img src="resources/images/github.png" alt="Logo" style="width:40px;">
-                        </a>
-                        <a class="navbar-brand" href="http://linkedin.com/in/ewmeyer/">
-                          <img src="resources/images/linkedin.png" alt="Logo" style="width:40px;">
-                        </a>
-                        <a class="navbar-brand" href="mailto: Ethan.Meyer@Colorado.edu">
-                          <img src="resources/images/gmail.png" alt="Logo" style="width:40px;">
-                        </a>
-                      </li>
-                  </ul>
-                </div>
-              
-            </nav>
+            </div>
+            <div data-date="May 2021 – August 2021">
+                <h3>United Airlines</h3>
+                <h4>Operations Research Intern</h4>
+                <ul>
+                    <li>
+                        Collaborated with team to implement user interface and API server for artificial intelligence application supporting cancer research through extracting, cleaning, and categorizing valuable data from surgical pathology reports.
+                    </li>
+                    <li>
+                        Met with client to refine application requirements, discuss project timeline, and address additional concerns.
+                    </li>
+                    <li>
+                        Utilized iterative workflow and effective communication skills to coordinate with teammates and create a quality product.
+                    </li>
+                    <li>
+                        Gained exposure to and experience with AWS, natural language processing, Agile development, relational databases, and more.
 
-              <!-- Profile -->
-              <div class="container" width="65%">
-                <h1>
-                    Ethan Meyer - 
-                    <small class="text-muted">Computer and Data Scientist</small>
-                </h1>
-                <div class="card" style="border:0px;">
+                    </li>
+                </ul>
+            </div>
+            <div data-date="January 2021 – Present">
+                <h3>Kenotica</h3>
+                <h4>Web Development Intern</h4>
+                <ul>
+                    <li>
+                        Conducted Importance-Performance analysis of NPS drivers to identify and prioritize pain points in the customer 
+                        experience relative to competition; presented findings alongside multi-tiered recommendations to company 
+                        executives including Chief Customer Officer                    </li>
+                    <li>
+                        Built machine learning model to perform sentiment analysis on customer survey comments, achieving estimated 95% 
+                        classification accuracy on corpus of 10,000; combined comments with staffing database to develop prototype 
+                        employee recognition dashboard showcasing top performers by position                    </li>
+                    <li>
+                        Provided new insight into customer attitudes through keyword analysis of Twitter API data                    </li>
+                    <li>
+                        Gained exposure to and experience with AWS, natural language processing, Agile development, relational databases, and more.
 
-                    <div>
-                        <img class = "float-left mr-4" src="resources/images/LCG HEADSHOT.png" alt="Ethan's Profile Pucture" width = "280px" style="border-radius: 50%;">
-                        <br>
-                        <p style="line-height: 2.4;">
-                          Hello, and welcome to my personal website! I am currently a second-year student studying <strong> Computer Science</strong> and
-                         <strong> Data Science </strong> at the <strong> University of Colorado Boulder </strong>. As an emerging data scientist,
-                          I seek to gain real-world experience developing data-driven solutions to complex issues. 
-                          I aim to leverage a strong work-ethic, analytical mindset, and technicals skills to
-                           provide value in all settings. For more information about myself please visit my <a href="https://www.linkedin.com/in/ewmeyer/">LinkedIn</a>
-                          or for a technical portfolio, conscider taking a look at my <a href="https://github.com/etme9299/">GitHub</a>. Thank you!
+                    </li>
+                </ul>
+            </div>
+
+            <div data-date="August 2020 – January 2021">
+                <h3>Gravity Renewables</h3>
+                <h4>Data Analytics Intern</h4>
+                <ul>
+                    <li>
+                        Developed operational dashboard used by company’s executive team to evaluate weekly performance of 18 hydroelectric plants.
+                    </li>
+                    <li>
+                        Processed thousands of data points on a weekly basis from various sources to ascertain plant specific generation.
+                    </li>
+                    <li>
+                        Exposed operational inefficiencies through comparing expected output based on USGS water flow data with actual production.
+                    </li>
+                    <li>
+                        Leveraged experience in programming and data analytics to implement scripts streamlining weekly analysis process.
+                </ul>
+            </div>
+
+            <div data-date="September 2019 – Present">
+                <h3>Leeds Consulting Group</h3>
+                <h4>VP of Finance, Engagement Manager</h4>
+                <ul>
+                    <li>
+                        Spearheaded engagement with Google Cloud, leading team in helping client strategize sports-tech partnership with MLB.
+                        
+                    <li>
+                        Acquired broad technical and interpersonal skills through participating in club curriculum focused around management consulting.
+                    </li>
+                    <li>
+                        Leveraged cloud tools to generate financial reports for members including illustrative graphics depicting club expenditures.
+                    </li>
+                    <li>
+                        Created advanced spreadsheet to track attendance through importing, parsing, and analyzing Zoom participant data from club meetings.
+
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div data-date="August 2020 – Present">
+                <h3>University of Colorado Boulder</h3>
+                <h4>Couse Assistant</h4>
+                <ul>
+                    <li>
+                        Course Assistant for Data Structures in CU’s department of Computer Science.
+                        <li>
+                            Created helpful technology tutorials used across courses and semesters.
+                        </li>
+                    <li>
+                        Held office hours helping students with general course material and weekly assignments.
+                    </li>
+                    <li>
+                        Met with Professors and other members of course support team to discuss strategies for teaching in remote environment.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>R</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Linux</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>VBA</li>
+            <li>Excel</li>
+
+        </ul>
+    </div>
+
+    <div id="education" class="background-alt">
+        <h2 class="heading">Education</h2>
+    
+        <div class="education-block" style="background-color: white;">
+            <h3>University of Colorado Boulder</h3>
+            <span class="education-date">Aug 2019 - Present</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    GPA: 3.97 cumulative
+                </li>
+                <li>
+                    Minors in Leadership Studies and Data Science
+                </li>
+                
+                <li>
+                    Boettcher Scholar, Presidents Leadership Class Scholar
+                </li>
+            </ul>
+        </div>
+
+        <div class="education-block" style="background-color: white;">
+            <h3>Rampart High School</h3>
+            <span class="education-date">Aug 2015 - May 2019</span>
+            <h4>High School Diploma</h4>
+            <ul>
+                <li>
+                    GPA: 4.50 weighted, 4.0 unweighted
+                </li>
+                <li>
+                    Eagle Scout, Senior Class President
+                </li>
+                
+                <li>
+                    First Team Academic All-State, National AP Scholar
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" >
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/wordle.png" style="padding-top: 15%; padding-bottom: 15%;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Wordle Entropy Solver</h3>
+                        <p>
+                            The project involved building an AI bot that can solve the popular word game, Wordle. The bot used entropy, a measure of uncertainty, to narrow down the possible words that fit the given pattern. The algorithm was trained using a large dataset of words and their frequency of occurrence in the English language to improve its accuracy and efficiency.
                         </p>
-                      </div>
-                      <br>
-                      <div style="display: flex;
-                      justify-content: center;
-                      align-items: center;">
-                        <button type="button" class="btn btn-primary btn-md btn-dark" style="margin:5px;" onclick="window.location.href='resources/documents/Meyer,Ethan_Resume.pdf';">Resume</button>
-                        <button type="button" class="btn btn-primary btn-md btn-dark" style="margin:5px;" onclick="window.location.href='resources/documents/Meyer_Ethan_Transcript.pdf';">Transcript</button>
-                      </div>
-                     
+                        <a href="https://youtu.be/aGq7ML_Eusc" class="btn-rounded-blue">View Demo</a>
+                        <a href="https://docs.google.com/presentation/d/1RDvHmIfyvkfA9A-RwyN7JKNoy-ztg3mWIt3QTeq0yyQ/edit?usp=sharing" class="btn-rounded-blue">View Presentation</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/2by2.png" style="padding-top: 15%; padding-bottom: 15%; width: 280px;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>2by2: Interactive Data Visualization Tool</h3>
+                        <p>
+                            What if the key to collecting
+data is also rooted in visualization? In this project, I set out to
+develop 2by2–a web-based survey tool that allows users to submit
+data through interacting with a data visualization. Specifically,
+2by2 enables users to (1) provide individual data by placing and
+manipulating points on a graph and (2) visualize both group and
+individual responses.
+                        </p>
+                        <a href="https://youtu.be/omNcMmc0Gpg" class="btn-rounded-blue">View Demo</a>
+                        <a href="images/2by2-Essay.pdf" class="btn-rounded-blue">View Technical Paper</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
                 
 
-                <!-- Professional Interests -->
-                <br><br>
-                <h2>Professional Interests</h2>
-                <br>
 
-                <div class="card-group">
-                  <div class="card" id="data_science">
-                    <img class="img-card-top rounded mx-auto d-block" src="resources/images/data.jpg" alt="Data" height="200px" >
-                    <div class="card-body" >
-                      <h5>Data Science</h5>
-                      <p> I enjoy Data Science because it combines analytical rigor with creative 
-                        thinking to solve complex problems. From healthcare to social media, data is everywhere. 
-                        But, in order to channel the power of data into forming intuitive solutions, it takes a special scientist – 
-                        one who can ask the right questions and determine the appropriate course of action.</p>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/vibify.png" />
                     </div>
-                  </div>
-
-                  <div class="card" id="consulting">
-                    <img class="img-card-top rounded mx-auto d-block" src="resources/images/consulting.jpeg" alt="Consulting" height="200px" >
-                    <div class="card-body">
-                      <h5>Management and Tech Consulting</h5>
-                      <p> I enjoy this field
-                        primarily because of the pace at which the work is done. I love pressure, I love taking on new projects,
-                         and I especially love thinking on my feet. For all thest reasons, MManagement and Technology Consulting 
-                         have become a great passion of mine.
-                      </p>
-                    </div>
-                  </div>
-                  
-                    <div class="card" id="coding">
-                      <img class="img-card-top rounded mx-auto d-block" src="resources/images/coding.jpeg" alt="Coding" width="300px">
-                      <div class="card-body">
-                        <h5>Coding</h5>
-                        <p>Admittedly, I had no interest in pursuing Computer Science as a career when I first came to
-                          college. I thought the profession entailed always having to wear dark hoodies and sit in the dark for hours
-                          at a time before finally yelling "I'm in!". But as I learned more about the field, I fell in love with the content.
-                          In a world that is filled with nuances and paradoxes, 0's and 1's provide flawless logic.  </p>
-                      </div>
-                    </div>
-                  
-
-                </div>
-
-                <!-- Personal Interests -->
-                <br><br>
-
-                <h2>Personal Interests</h2>
-                <br>
-
-
-                <div class="card-group border">
-                  <div class="card" >
-                    <img class="img-card-top rounded mx-auto d-block" src="resources/images/skiing.jpg" alt="Skiing" height="200px" >
-                    <div class="card-body" >
-                      <h5>Big Mountain Skiing</h5>
-                      <p>This is a picture od me volunteering as a Ski Patroller at Winter Park Resort.
-                          I've been doing this for 5 years now and I love every day of it! </p>
-                    </div>
-                  </div>
-
-                  <div class="card" >
-                    <img class="img-card-top rounded mx-auto d-block" src="resources/images/backpacking.png" alt="Backpacking" height="200px" >
-                    <div class="card-body">
-                      <h5>Backpacking</h5>
-                      <p>My dad and I try to go on a backpacking trip once a year. This is one of our favorite
-                        spots in Colorado.
-                      </p>
-                    </div>
-                  </div>
-                  
-                    <div class="card" >
-                      <img class="img-card-top rounded mx-auto d-block" src="resources/images/ninja.JPG" alt="Motorcycle" height="200px">
-                      <div class="card-body">
-                        <h5>Motorcycle Riding</h5>
-                        <p>This is my Kawasaki Ninja. It's a lot of fun to ride and I have to remind myself
-                            to stay out of trouble when I'm on it!
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Vibify - Spotify Music Visualizer</h3>
+                        <p>
+                            From the occasional listener to the avid enthusiast, 
+                            Vibify’s mission is to create a <span class="bold-blue">visually stimulating 
+                            experience for any music lover.</span> Vibify combines the 
+                            ease of Spotify with frequency-based  animations to create an 
+                            incredible overall experience. Vibify is a full-stack 
+                            web application that I created as part of a software
+                            development course.
                         </p>
-                      </div>
+                        <a href="https://youtu.be/CC5Wp4figaY" class="btn-rounded-blue">View Demo</a>
                     </div>
-                  
-
+                    <!-- End .project-info -->
                 </div>
-
-              </div>
-              
-              <footer style="text-align: center; background-color: lightgrey;">
-                <p> Ethan Meyer Personal Website</p>
-
-              </footer>
+                <!-- End .project -->
 
 
-        
-        </body>
-    </html>
+                <div class="project shadow-large">
+                    <div class="project-image" style="margin: 15px;">
+                        <img src="images/blur.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Power Plant Energy Generation Dashboard</h3>
+                        <p>
+                            As part of an internship, I developed and maintained an 
+                            <span class="bold-blue">excel-based analytics dashboard</span> used by
+                            my company's executive team to evaluate the performance of a portfolio 
+                            of 18 renewable energy plants located primarily along the East Coast. Due to
+                            a Non-Disclosure Agreement, I am unable to show this work.
+                        </p>
+                        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image" style="margin: 15px;">
+                        <img src="images/blur.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Weekly Energy Generation Analytics Tool</h3>
+                        <p>
+                            In my time at Gravity Renewables, I coded several R and VBA scrips to clean, 
+                            process, and visualize weekly data for portfolio of 18 renewable energy plants.
+
+                        </p>
+                        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="interests" class="background-alt">
+        <h2 class="heading">Personal Interests</h2>
+        <div class="container">
+            <div class="row">
+                <div class="interests shadow-large">
+                    <div class="interests-image">
+                        <img src="images/skiing.jpg" style="width: 285px;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="interests-info">
+                        <h3>Big Mountain Skiing</h3>
+                        <p>
+                            This is a picture of me volunteering as a Ski Patroller at Winter Park Resort. I've been doing this for 5 years now and I love every day of it!
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="interests shadow-large">
+                    <div class="interests-image">
+                        <img src="images/backpacking.png" style="width: 285px;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="interests-info">
+                        <h3>Backpacking</h3>
+                        <p>
+                            My dad and I try to go on a backpacking trip once a year. Lost Creek Wilderness Area is one of our favorite spots in Colorado.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="interests shadow-large">
+                    <div class="interests-image">
+                        <img src="images/ninja.JPG" style="width: 285px;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="interests-info">
+                        <h3>Motorcycle Riding</h3>
+                        <p>
+                            This is my Kawasaki Ninja. It's a lot of fun to ride and I have to remind myself to stay out of trouble when I'm on it!
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    
+    <!-- End #skills -->
+
+    <!-- <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div> -->
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2023 Ethan Meyer
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/etme9299" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/ewmeyer" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:Ethan.Meyer@colorado.edu?subject=" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
